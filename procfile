@@ -1,0 +1,4 @@
+release: python manage.py makemigrations todolistapp
+release: python manage.py migrate
+
+web: gunicorn Todolist.wsgi
